@@ -12,7 +12,13 @@
                     <h2>@ViewData["Title"]</h2>
                 </div>
                 <div class="card-body">
-                    <form method="post">
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">
+                            @TempData["ErrorMessage"]
+                        </div>
+                    }
+                    <form method="post" asp-route-returnUrl="@ViewData["ReturnUrl"]">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-group mb-3">
                             <label asp-for="Email" class="form-label"></label>
@@ -37,7 +43,7 @@
                 </div>
                 <div class="card-footer">
                     <p>
-                        <a asp-action="Register">Register as a new user</a>
+                        <a asp-action="Register" asp-route-returnUrl="@ViewData["ReturnUrl"]">Register as a new user</a>
                     </p>
                 </div>
             </div>

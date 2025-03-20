@@ -22,7 +22,6 @@ namespace UserManagementApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // Check if user is blocked before allowing access
             if (!await IsUserActiveAsync())
             {
                 await _signInManager.SignOutAsync();

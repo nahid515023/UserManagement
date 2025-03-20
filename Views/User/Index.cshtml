@@ -6,15 +6,25 @@
 <div class="container mt-4">
     <h2>User Management</h2>
     
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    
     <div class="toolbar mb-3">
         <form id="userActionForm" method="post">
             <div class="btn-group">
-                <button type="button" class="btn btn-danger" id="blockBtn">Block</button>
+                <button type="button" class="btn btn-danger" id="blockBtn">
+                    <i class="bi bi-lock"></i> Block
+                </button>
                 <button type="button" class="btn btn-success" id="unblockBtn">
-                    <i class="bi bi-unlock"></i>
+                    <i class="bi bi-unlock"></i> Unblock
                 </button>
                 <button type="button" class="btn btn-dark" id="deleteBtn">
-                    <i class="bi bi-trash"></i>
+                    <i class="bi bi-trash"></i> Delete
                 </button>
             </div>
         </form>
@@ -39,9 +49,9 @@
                 {
                     <tr>
                         <td>
-                            <input type="checkbox" class="user-checkbox" value="@user.Id" />
+                            <input type="checkbox" class="user-checkbox" value="@user.Id" @(user.IsCurrentUser ? "disabled" : "") />
                         </td>
-                        <td>@user.Name</td>
+                        <td>@user.Name @(user.IsCurrentUser ? "(You)" : "")</td>
                         <td>@user.Email</td>
                         <td>@(user.LastLoginTime.HasValue ? user.LastLoginTime.Value.ToString("g") : "Never")</td>
                         <td>@user.RegistrationTime.ToString("g")</td>
@@ -62,25 +72,23 @@
         $(document).ready(function() {
             // Select all checkbox functionality
             $("#selectAll").change(function() {
-                $(".user-checkbox").prop('checked', $(this).prop('checked'));
+                $(".user-checkbox:not(:disabled)").prop('checked', $(this).prop('checked'));
             });
             
             // Handle toolbar button clicks
             $("#blockBtn").click(function() {
-                processSelectedUsers("BlockUsers");
+                processSelectedUsers("BlockUsers", "Are you sure you want to block the selected users?");
             });
             
             $("#unblockBtn").click(function() {
-                processSelectedUsers("UnblockUsers");
+                processSelectedUsers("UnblockUsers", "Are you sure you want to unblock the selected users?");
             });
             
             $("#deleteBtn").click(function() {
-                if (confirm("Are you sure you want to delete the selected users?")) {
-                    processSelectedUsers("DeleteUsers");
-                }
+                processSelectedUsers("DeleteUsers", "Are you sure you want to delete the selected users? This action cannot be undone.");
             });
             
-            function processSelectedUsers(action) {
+            function processSelectedUsers(action, confirmMessage) {
                 var selectedUsers = [];
                 $(".user-checkbox:checked").each(function() {
                     selectedUsers.push($(this).val());
@@ -88,6 +96,10 @@
                 
                 if (selectedUsers.length === 0) {
                     alert("Please select at least one user.");
+                    return;
+                }
+                
+                if (confirmMessage && !confirm(confirmMessage)) {
                     return;
                 }
                 

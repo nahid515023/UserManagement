@@ -233,4 +233,5 @@
 /home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/ref/UserManagementApp.dll
 /home/nahid/Desktop/intern/UserManagementApp/bin/Debug/net9.0/Npgsql.dll
 /home/nahid/Desktop/intern/UserManagementApp/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-5lv5h8c99u.gz
+/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/UserManagementApp.sourcelink.json
+/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz

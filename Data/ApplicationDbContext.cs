@@ -14,8 +14,6 @@ namespace UserManagementApp.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            
-            // Create a unique index on the email field
             builder.Entity<ApplicationUser>()
                 .HasIndex(u => u.Email)
                 .IsUnique();

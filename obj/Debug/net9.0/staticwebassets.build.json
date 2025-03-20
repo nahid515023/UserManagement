@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wVpqCLJKlqU+nEvy5sOpiFtgW/gRA30U5K378b22f+c=",
+  "Hash": "m6lDNEpPRPZYpY0J3kEdJGz+XE1v9GYJKprcLy2K2F4=",
   "Source": "UserManagementApp",
   "BasePath": "_content/UserManagementApp",
   "Mode": "Default",
@@ -773,12 +773,12 @@
       "OriginalItemSpec": "/home/nahid/Desktop/intern/UserManagementApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-5lv5h8c99u.gz",
+      "Identity": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz",
       "SourceId": "UserManagementApp",
       "SourceType": "Discovered",
       "ContentRoot": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/UserManagementApp",
-      "RelativePath": "css/site#[.{fingerprint=5lv5h8c99u}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=zz9i45klmo}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -787,8 +787,8 @@
       "RelatedAsset": "/home/nahid/Desktop/intern/UserManagementApp/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "oe2li5l85x",
-      "Integrity": "kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0=",
+      "Fingerprint": "ugti5i5jf5",
+      "Integrity": "riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/nahid/Desktop/intern/UserManagementApp/wwwroot/css/site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5lv5h8c99u",
-      "Integrity": "1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA=",
+      "Fingerprint": "zz9i45klmo",
+      "Integrity": "4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.5lv5h8c99u.css",
-      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-5lv5h8c99u.gz",
+      "Route": "css/site.css",
+      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005000000000"
+          "Quality": "0.002688172043"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "199"
+          "Value": "371"
         },
         {
           "Name": "ETag",
-          "Value": "\"kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0=\""
+          "Value": "\"riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 15:57:40 GMT"
+          "Value": "Wed, 19 Mar 2025 20:54:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,26 +2772,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA=\""
+          "Value": "W/\"4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "5lv5h8c99u"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA="
+          "Value": "sha256-4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs="
         }
       ]
     },
     {
-      "Route": "css/site.5lv5h8c99u.css",
+      "Route": "css/site.css",
       "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "293"
+          "Value": "813"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2801,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA=\""
+          "Value": "\"4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 15:57:40 GMT"
+          "Value": "Wed, 19 Mar 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.zz9i45klmo.css",
+      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002688172043"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "371"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zz9i45klmo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.zz9i45klmo.css",
+      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 20:54:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5lv5h8c99u"
+          "Value": "zz9i45klmo"
         },
         {
           "Name": "label",
@@ -2831,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA="
+          "Value": "sha256-4cQolzrEtrzpaEmSPmJOeui/xzvJROKFvT51PlurWFs="
         }
       ]
     },
     {
-      "Route": "css/site.5lv5h8c99u.css.gz",
-      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-5lv5h8c99u.gz",
+      "Route": "css/site.zz9i45klmo.css.gz",
+      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "199"
+          "Value": "371"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0=\""
+          "Value": "\"riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 15:57:40 GMT"
+          "Value": "Wed, 19 Mar 2025 20:54:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5lv5h8c99u"
+          "Value": "zz9i45klmo"
         },
         {
           "Name": "label",
@@ -2884,144 +3021,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-5lv5h8c99u.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.005000000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "199"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 15:57:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "293"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 15:57:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1/8sRhi+skqPBezeWKCuz19AbDqpXO722Jszv+9DWLA="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-5lv5h8c99u.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "199"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 15:57:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kCqnJUFlKyLo8dLrN1r6b4dbwXe92hQPe4uMIS0+Nf0="
+          "Value": "sha256-riJKf+5yMIUV7NGrK3CZ6LyGFuT0kqCe8/825qOBLAw="
         }
       ]
     },

@@ -21,15 +21,17 @@ namespace UserManagementApp.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult Login()
+        public IActionResult Login(string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(model.Email);
@@ -39,7 +41,8 @@ namespace UserManagementApp.Controllers
                     return View(model);
                 }
 
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+                // Use PasswordSignInAsync with username, not email
+                var result = await _signInManager.PasswordSignInAsync(user?.UserName ?? model.Email, model.Password, model.RememberMe, lockoutOnFailure: true);
                 if (result.Succeeded)
                 {
                     // Update last login time
@@ -49,10 +52,19 @@ namespace UserManagementApp.Controllers
                         await _userManager.UpdateAsync(user);
                     }
                     
-                    return RedirectToAction("Index", "User");
+                    return !string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl) 
+                        ? Redirect(returnUrl) 
+                        : RedirectToAction("Index", "User");
                 }
                 
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                if (result.IsLockedOut)
+                {
+                    ModelState.AddModelError(string.Empty, "Account is temporarily locked out due to multiple failed login attempts.");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                }
             }
             
             return View(model);
@@ -60,19 +72,22 @@ namespace UserManagementApp.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult Register()
+        public IActionResult Register(string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser
                 {
+                    Id = Guid.NewGuid().ToString(),
                     UserName = model.Email,
                     Email = model.Email,
                     Name = model.Name,
@@ -83,7 +98,9 @@ namespace UserManagementApp.Controllers
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "User");
+                    return !string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl) 
+                        ? Redirect(returnUrl) 
+                        : RedirectToAction("Index", "User");
                 }
                 
                 foreach (var error in result.Errors)
