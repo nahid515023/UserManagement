@@ -82,6 +82,7 @@ namespace UserManagementApp.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model, string? returnUrl = null)
         {
+            Console.WriteLine($"Model: {model}");
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {

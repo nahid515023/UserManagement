@@ -235,3 +235,5 @@
 /home/nahid/Desktop/intern/UserManagementApp/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/UserManagementApp.sourcelink.json
 /home/nahid/Desktop/intern/UserManagementApp/obj/Debug/net9.0/compressed/ifm3g79ye8-zz9i45klmo.gz
+/home/nahid/Desktop/intern/UserManagementApp/bin/Debug/net9.0/DotNetEnv.dll
+/home/nahid/Desktop/intern/UserManagementApp/bin/Debug/net9.0/Sprache.dll

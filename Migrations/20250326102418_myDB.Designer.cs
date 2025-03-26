@@ -12,8 +12,8 @@ using UserManagementApp.Data;
 namespace UserManagementApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250319164310_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250326102418_myDB")]
+    partial class myDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
